@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Generaciones de Memoria RAM</title>
+</head>
+<link rel="icon" type="image/png" href="iconoo.webp">
+ <link rel="stylesheet" href="ram.css">
+ <script src="ddram.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">🖥️ RAM Evolution</div>
+        <button class="nav-btn" onclick="goToPage(0)">Inicio</button>
+    </nav>
+
+    <!-- Página de Inicio -->
+    <div id="page-0" class="page active">
+        <div class="hero">
+            <h1>Generaciones de Memoria RAM</h1>
+            <p>Explora la evolución tecnológica de la memoria de acceso aleatorio</p>
+            <button class="start-btn" onclick="goToPage(1)">Comenzar Recorrido 🚀</button>
+        </div>
+    </div>
+
+    <!-- Página: ¿Qué es la RAM? -->
+    <div id="page-1" class="page">
+        <div class="content-page">
+            <div class="ram-detail">
+                <div class="ram-header">
+                    <div class="ram-icon-large">💾</div>
+                    <div class="ram-title-large">¿Qué es la Memoria RAM?</div>
+                </div>
+
+                <div class="info-section">
+                    <h3>Definición</h3>
+                    <p>La <strong>RAM (Random Access Memory)</strong> o Memoria de Acceso Aleatorio es un tipo de memoria volátil de alta velocidad que almacena temporalmente los datos e instrucciones que el procesador necesita en tiempo real.</p>
+                </div>
+
+                <div class="info-section">
+                    <h3>Características Principales</h3>
+                    <p><strong>⚡ Velocidad:</strong> Acceso ultrarrápido a datos (nanosegundos)</p>
+                    <p><strong>🔄 Volatilidad:</strong> Pierde información al apagar el equipo</p>
+                    <p><strong>🎯 Acceso Aleatorio:</strong> Cualquier posición accesible directamente</p>
+                    <p><strong>💡 Temporal:</strong> Almacena datos de programas en ejecución</p>
+                </div>
+
+                <div class="info-section">
+                    <h3>¿Por qué es importante?</h3>
+                    <p>La RAM actúa como puente entre el procesador y el almacenamiento permanente. Mientras más RAM tengas, más aplicaciones podrás ejecutar simultáneamente sin ralentizar el sistema. Es esencial para multitarea, gaming, edición de video y aplicaciones profesionales.</p>
+                </div>
+
+                <div class="navigation-buttons">
+                    <button class="nav-page-btn" onclick="goToPage(0)">⬅️ Inicio</button>
+                    <button class="nav-page-btn" onclick="goToPage(2)">Siguiente ➡️</button>
+                </div>
+
+                <div class="progress-dots">
+                    <div class="dot active"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DDR1 -->
+    <div id="page-2" class="page">
+        <div class="content-page">
+            <div class="ram-detail">
+                <div class="ram-header">
+                    <div class="ram-icon-large">1</div>
+                    <div class="ram-title-large">DDR SDRAM</div>
+                    <p style="font-size: 1.2rem; opacity: 0.9; color: white; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">Primera Generación (2000)</p>
+                </div>
+
+                <div class="keywords">
+                    <span class="keyword">Primera generación</span>
+                    <span class="keyword">Doble transferencia</span>
+                    <span class="keyword">184 pines</span>
+                </div>
+
+                <div class="info-grid">
+                    <div class="info-item">
+                        <div class="info-label">⚡ Velocidad</div>
+                        <div class="info-value">200-400 MHz</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">🔋 Voltaje</div>
+                        <div class="info-value">2.5V - 2.6V</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">📊 Ancho de banda</div>
+                        <div class="info-value">1.6 - 3.2 GB/s</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">💾 Capacidad</div>
+                        <div class="info-value">128 MB - 1 GB</div>
+                    </div>
+                </div>
+
+                <div class="info-section">
+                    <p>Revolucionó el mercado al transferir datos en ambos flancos del reloj (subida y bajada), duplicando la velocidad efectiva. Marcó el inicio de la era DDR moderna.</p>
+                 <center><img src="sdram.png" width="300" height="200"> </center>
+                </div>
+
+                <div class="navigation-buttons">
+                    <button class="nav-page-btn" onclick="goToPage(1)">⬅️ Anterior</button>
+                    <button class="nav-page-btn" onclick="goToPage(3)">Siguiente ➡️</button>
+                </div>
+
+                <div class="progress-dots">
+                    <div class="dot"></div>
+                    <div class="dot active"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DDR2 -->
+    <div id="page-3" class="page">
+        <div class="content-page">
+            <div class="ram-detail">
+                <div class="ram-header">
+                    <div class="ram-icon-large">2</div>
+                    <div class="ram-title-large">DDR2 SDRAM</div>
+                    <p style="font-size: 1.2rem; opacity: 0.9; color: white; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">Segunda Generación (2003)</p>
+                </div>
+
+                <div class="keywords">
+                    <span class="keyword">Mayor velocidad</span>
+                    <span class="keyword">Menor consumo</span>
+                    <span class="keyword">240 pines</span>
+                </div>
+
+                <div class="info-grid">
+                    <div class="info-item">
+                        <div class="info-label">⚡ Velocidad</div>
+                        <div class="info-value">400-1066 MHz</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">🔋 Voltaje</div>
+                        <div class="info-value">1.8V</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">📊 Ancho de banda</div>
+                        <div class="info-value">3.2 - 8.5 GB/s</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">💾 Capacidad</div>
+                        <div class="info-value">256 MB - 4 GB</div>
+                    </div>
+                </div>
+
+                <div class="info-section">
+                    <p>Mejoró la eficiencia energética y duplicó las velocidades mediante buffers internos mejorados. El prefetch de 4 bits permitió mayor rendimiento con menor consumo.</p>
+                 <center><img src="ddr2.jpg" width="300" height="200"> </center>
+                </div>
+
+                <div class="navigation-buttons">
+                    <button class="nav-page-btn" onclick="goToPage(2)">⬅️ Anterior</button>
+                    <button class="nav-page-btn" onclick="goToPage(4)">Siguiente ➡️</button>
+                </div>
+
+                <div class="progress-dots">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot active"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DDR3 -->
+    <div id="page-4" class="page">
+        <div class="content-page">
+            <div class="ram-detail">
+                <div class="ram-header">
+                    <div class="ram-icon-large">3</div>
+                    <div class="ram-title-large">DDR3 SDRAM</div>
+                    <p style="font-size: 1.2rem; opacity: 0.9; color: white; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">Tercera Generación (2007)</p>
+                </div>
+
+                <div class="keywords">
+                    <span class="keyword">Eficiencia energética</span>
+                    <span class="keyword">Alta densidad</span>
+                    <span class="keyword">240 pines</span>
+                </div>
+
+                <div class="info-grid">
+                    <div class="info-item">
+                        <div class="info-label">⚡ Velocidad</div>
+                        <div class="info-value">800-2133 MHz</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">🔋 Voltaje</div>
+                        <div class="info-value">1.5V (1.35V LV)</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">📊 Ancho de banda</div>
+                        <div class="info-value">6.4 - 17 GB/s</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">💾 Capacidad</div>
+                        <div class="info-value">1 GB - 16 GB</div>
+                    </div>
+                </div>
+
+                <div class="info-section">
+                    <p>Estándar durante una década por su equilibrio perfecto entre rendimiento y eficiencia. Con prefetch de 8 bits, ofreció velocidades impresionantes manteniendo temperaturas bajas.</p>
+                 <center><img src="ddr3.jpg" width="300" height="200"> </center>
+                </div>
+
+                <div class="navigation-buttons">
+                    <button class="nav-page-btn" onclick="goToPage(3)">⬅️ Anterior</button>
+                    <button class="nav-page-btn" onclick="goToPage(5)">Siguiente ➡️</button>
+                </div>
+
+                <div class="progress-dots">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot active"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DDR4 -->
+    <div id="page-5" class="page">
+        <div class="content-page">
+            <div class="ram-detail">
+                <div class="ram-header">
+                    <div class="ram-icon-large">4</div>
+                    <div class="ram-title-large">DDR4 SDRAM</div>
+                    <p style="font-size: 1.2rem; opacity: 0.9; color: white; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">Cuarta Generación (2014)</p>
+                </div>
+
+                <div class="keywords">
+                    <span class="keyword">Rendimiento superior</span>
+                    <span class="keyword">Bajo consumo</span>
+                    <span class="keyword">288 pines</span>
+                </div>
+
+                <div class="info-grid">
+                    <div class="info-item">
+                        <div class="info-label">⚡ Velocidad</div>
+                        <div class="info-value">1600-3200 MHz</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">🔋 Voltaje</div>
+                        <div class="info-value">1.2V</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">📊 Ancho de banda</div>
+                        <div class="info-value">12.8 - 25.6 GB/s</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">💾 Capacidad</div>
+                        <div class="info-value">4 GB - 64 GB</div>
+                    </div>
+                </div>
+
+                <div class="info-section">
+                    <p>Elevó el estándar con mayores densidades (hasta 64GB por módulo) y velocidades superiores. Incorpora mejoras en integridad de señal, ideal para gaming y aplicaciones profesionales.</p>
+                 <center><img src="ddr4.jpg" width="300" height="200"> </center>
+                </div>
+
+                <div class="navigation-buttons">
+                    <button class="nav-page-btn" onclick="goToPage(4)">⬅️ Anterior</button>
+                    <button class="nav-page-btn" onclick="goToPage(6)">Siguiente ➡️</button>
+                </div>
+
+                <div class="progress-dots">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot active"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DDR5 -->
+    <div id="page-6" class="page">
+        <div class="content-page">
+            <div class="ram-detail">
+                <div class="ram-header">
+                    <div class="ram-icon-large">5</div>
+                    <div class="ram-title-large">DDR5 SDRAM</div>
+                    <p style="font-size: 1.2rem; opacity: 0.9; color: white; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">Quinta Generación (2020)</p>
+                </div>
+
+                <div class="keywords">
+                    <span class="keyword">Última generación</span>
+                    <span class="keyword">Máximo rendimiento</span>
+                    <span class="keyword">288 pines</span>
+                    <span class="keyword">PMIC integrado</span>
+                </div>
+
+                <div class="info-grid">
+                    <div class="info-item">
+                        <div class="info-label">⚡ Velocidad</div>
+                        <div class="info-value">4800-8400 MHz</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">🔋 Voltaje</div>
+                        <div class="info-value">1.1V</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">📊 Ancho de banda</div>
+                        <div class="info-value">38.4 - 67.2 GB/s</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">💾 Capacidad</div>
+                        <div class="info-value">8 GB - 128 GB</div>
+                    </div>
+                </div>
+
+                <div class="info-section">
+                    <p>El futuro de la memoria RAM con arquitectura rediseñada. Duplica el ancho de banda, gestión de energía mejorada con PMIC integrado, y capacidades masivas para IA, gaming extremo y centros de datos.</p>
+                 <center><img src="ddr5.png" width="300" height="200"> </center>
+                </div>
+
+                <div class="navigation-buttons">
+                    <button class="nav-page-btn" onclick="goToPage(5)">⬅️ Anterior</button>
+                    <button class="nav-page-btn" onclick="goToPage(0)">🏠 Volver al Inicio</button>
+                </div>
+
+                <div class="progress-dots">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot active"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
